@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/clear.jpg');
+    /*background-image: cover; /* Ensure background image covers the entire screen*/
+    /*background-position: center;  */
+}
+
+.container {
+    width: 90%; /* Set width to 90% of viewport width */
+    max-width: 500px; 
+    margin: 50px auto; /* Center container with top/bottom margin */
+    padding: 20px; /* Adjust padding for smaller screens */
+}
+
+.inputs {
+    padding: 1rem 0; 
+    text-align: center;
+    justify-content: center;
+    background: rgb(240, 177, 177);
+    height: auto; /* Adjust height to fit content */
+    border: #ee9292;
+    border-radius: 7px;
+}
+
+.inputs input[type="text"] {
+    height: 3rem; 
+    width: 100%; /* Make input take full width */
+    max-width: 350px; /* Maximum width for larger screens */
+    background: #f1f1ee;
+    font-weight: bold;
+    font-size: 0.9rem; 
+    padding: 10px;
+    border: 2px solid #ee9292;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Adjust margin for spacing */
+}
+
+button {
+    height: 2.5rem; 
+    width: 100%; 
+    max-width: 150px;
+    background: #e97484;
+    font-weight: bold;
+    font-size: 0.9rem; /* Adjust font size */
+    color: white;
+    border: 1px solid rgb(170, 3, 170);
+    border-radius: 4px;
+    margin-top: 10px; /* Adjust margin for spacing */
+}
+
+.display {
+    text-align: center;
+    width: 100%; /* Make display take full width */
+    max-width: 520px; /* Maximum width for larger screens */
+    color: rgb(243, 247, 247);
+}
+
+.wrapper {
+    margin: 20px; /* Adjust margin for responsiveness */
+    background-color: #f3c2c2;
+    height: auto; 
+    padding: 20px; 
+    border-radius: 5px; 
+}
+
+.wrapper h2 {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(238, 231, 233);
+    color: rgb(5, 43, 58);
+}
+
+.wrapper p {
+    margin: 10px; 
+    text-align: center;
+    color: black;
+    font-size: 1.6rem; 
+}
+
+.wrapper h2 span {
+    font-size: 2rem; 
+    color: rgb(41, 22, 11);
+    border: 1px;
+    border-radius: 4px;
+}
+
+.wrapper p span {
+    color: rgb(99, 4, 99);
+    font-size: 1.5rem; 
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .inputs input[type="text"],
+    button {
+        width: 100%; /* Make input and button take full width on small screens */
+        max-width: 100%;
+    }
+
+    .wrapper {
+        margin: 10px;
+    }
+
+    .wrapper h2, p {
+        font-size: 1.3rem; /* Adjust font size for smaller screens */
+    }
+
+    .wrapper h2 span{
+        font-size: 1.6rem;
+    }
+
+    .wrapper p span{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .inputs input[type="text"],
+    button {
+        height: 2.5rem; 
+    }
+
+    .wrapper h2,
+    .wrapper p {
+        font-size: 1.2rem; 
+    }
+
+    .wrapper h2 span{
+        font-size: 1.5rem;; 
+    }
+
+    .wrapper p span{
+        font-size: 1.4rem;; 
+    }
+}
