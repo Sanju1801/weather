@@ -7,7 +7,7 @@ var wind = document.querySelector('#wind');
 var apik = "3171ff394ca126b7df6bc0a63dea52a0";
 
 function convert(val) {
-    return (val - 273.15).toFixed(2); // Corrected formula to convert Kelvin to Celsius
+    return (val - 273.15).toFixed(2);     // formula to convert Kelvin to Celsius
 }
 
 btn.addEventListener('click', function() {
